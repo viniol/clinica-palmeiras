@@ -5,17 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Clínica Veterinária Palmeiras em Cabo Frio RJ | Consultas, Vacinas e Emergência</title>
   <meta name="description" content="Clínica Veterinária em Cabo Frio RJ. Consultas, vacinas, cirurgias, exames, emergência 24h e internação setorizada. Cuidamos de cães, gatos, cavalos, pássaros e outros animais com amor e dedicação." />
-
-  <meta property="og:title" content="Clínica Veterinária Palmeiras em Cabo Frio RJ" />
-  <meta property="og:description" content="Atendimento completo para cães, gatos, cavalos, pássaros e outros pets em Cabo Frio. Consultas, vacinas, cirurgias, exames e emergência." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://viniol.github.io/clinica-palmeiras/" />
-  <meta property="og:image" content="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" />
-  <meta name="theme-color" content="#1f6b45" />
-
-  <!-- favicon/logo -->
   <link rel="icon" href="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" type="image/jpeg" />
-
   <style>
     :root{--green:#1f6b45;--green-700:#165236;--cream:#fffdf8;--text:#1b1b1b;--muted:#64748b;--shadow:0 6px 18px rgba(0,0,0,.08);--radius:18px;}
     *{box-sizing:border-box} html{scroll-behavior:smooth}
@@ -41,9 +31,8 @@
     .section-title{font-size:1.8rem;color:var(--green-700)} .section-sub{color:var(--muted);margin-bottom:22px}
     .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
     .card{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);text-align:center}
-    .animals{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
-    .animal{background:#fff;border:1px solid #eef2f4;border-radius:16px;padding:16px;text-align:center;box-shadow:var(--shadow)}
-    .animal img{width:64px;height:64px;margin:0 auto} .animal span{display:block;margin-top:10px;font-weight:700}
+    ul.lista-animais{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;text-align:center}
+    ul.lista-animais li{background:#fff;border:1px solid #eef2f4;border-radius:12px;padding:12px;box-shadow:var(--shadow)}
     .about{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
     .slider{overflow:hidden;border-radius:var(--radius);background:#fff;border:1px solid #eee}
     .slides{display:flex;transition:transform .5s ease} .testimonial{min-width:100%;padding:26px}
@@ -53,14 +42,10 @@
     .pro{background:#fff;border:1px solid #eef2f4;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
     .pro img{width:100%;max-height:320px;object-fit:contain;object-position:top center}
     .pro .info{padding:14px;text-align:center}
-    .insta-carousel{display:flex;overflow-x:auto;gap:10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:10px 0}
-    .insta-carousel a{flex:0 0 80%;scroll-snap-align:center;border-radius:12px;overflow:hidden;border:1px solid #eee}
-    .insta-carousel img{width:100%;height:auto;display:block}
     footer{background:#0f2e22;color:#e5f2ec;padding:36px 0;margin-top:40px}
     .float-wa{position:fixed;right:18px;bottom:18px;z-index:60}
     .float-wa a{background:#25d366;color:#fff;padding:14px 16px;border-radius:999px;font-weight:800;box-shadow:var(--shadow)}
     form input, form textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px}
-    /* Responsivo */
     @media (max-width: 768px) {
       .hero .grid, .about {grid-template-columns:1fr;text-align:center}
       .cta-row {flex-direction:column;align-items:center}
@@ -82,7 +67,8 @@
       </div>
       <nav class="menu">
         <a href="#servicos">Serviços</a><a href="#animais">Animais</a><a href="#sobre">Sobre</a>
-        <a href="#depoimentos">Depoimentos</a><a href="#equipe">Equipe</a><a href="#faleconosco">Fale Conosco</a>
+        <a href="#depoimentos">Depoimentos</a><a href="#equipe">Equipe</a>
+        <a href="#maisinfo">Mais Informações</a><a href="#faleconosco">Fale Conosco</a>
       </nav>
       <div class="hamburger" onclick="document.querySelector('.menu').classList.toggle('active')">☰</div>
     </div>
@@ -112,14 +98,13 @@
     </div></div></section>
 
   <!-- Animais -->
-  <section id="animais"><div class="wrap"><h2 class="section-title">Atendemos diversas espécies</h2>
-    <div class="animals">
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Ícone cachorro"/><span>Cães</span></div>
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616430.png" alt="Ícone gato"/><span>Gatos</span></div>
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/1998/1998611.png" alt="Ícone cavalo"/><span>Cavalos</span></div>
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616554.png" alt="Ícone pássaro"/><span>Pássaros</span></div>
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Ícone outros pets"/><span>Outros</span></div>
-    </div></div></section>
+  <section id="animais"><div class="wrap">
+    <h2 class="section-title">Atendemos diversas espécies</h2>
+    <p class="section-sub">Cuidamos de animais de pequeno e grande porte com dedicação e carinho.</p>
+    <ul class="lista-animais">
+      <li>Cães</li><li>Gatos</li><li>Cavalos</li><li>Pássaros</li><li>Animais silvestres</li><li>Outros pets</li>
+    </ul>
+  </div></section>
 
   <!-- Sobre -->
   <section id="sobre"><div class="wrap about">
@@ -130,7 +115,7 @@
     <div>
       <h2 class="section-title">Nossa história</h2>
       <p class="section-sub">Clínica veterinária em Cabo Frio inaugurada em 2025</p>
-      <p>A Clínica Veterinária Palmeiras nasceu do desejo de oferecer aos pets de Cabo Frio um espaço moderno, humano e preparado para todos os momentos. Nossa missão é unir tecnologia, experiência e amor para garantir o bem-estar de cada animal.</p>
+      <p>A Clínica Veterinária Palmeiras nasceu do desejo de oferecer aos pets de Cabo Frio um espaço moderno, humano e preparado para todos os momentos.</p>
       <p>Desde consultas de rotina até emergências, estamos prontos para cuidar com dedicação e transparência, tratando cada vida como parte da nossa família.</p>
     </div>
   </div></section>
@@ -156,11 +141,21 @@
 
   <!-- Instagram -->
   <section id="instagram"><div class="wrap"><h2 class="section-title">Últimos posts no Instagram</h2>
-    <div class="insta-carousel">
-      <a href="https://www.instagram.com/reel/DPEIuTCjJC-/" target="_blank"><img src="https://i.imgur.com/8l6Z5dZ.jpg" alt="Reel veterinária 1"></a>
-      <a href="https://www.instagram.com/reel/DOCOA55iIGO/" target="_blank"><img src="https://i.imgur.com/Hv2BjlL.jpg" alt="Reel veterinária 2"></a>
-      <a href="https://www.instagram.com/reel/DNTK8wGIy_u/" target="_blank"><img src="https://i.imgur.com/Fp5xvlD.jpg" alt="Reel veterinária 3"></a>
-      <a href="https://www.instagram.com/reel/DMf_iLnxAuJ/" target="_blank"><img src="https://i.imgur.com/N2vQ1rH.jpg" alt="Reel veterinária 4"></a>
+    <div class="cards">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPEIuTCjJC-/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOCOA55iIGO/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNTK8wGIy_u/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMf_iLnxAuJ/" data-instgrm-version="14"></blockquote>
+    </div>
+  </div></section>
+  <script async src="//www.instagram.com/embed.js"></script>
+
+  <!-- Mais Informações -->
+  <section id="maisinfo"><div class="wrap"><h2 class="section-title">Mais Informações</h2>
+    <div class="cards">
+      <div class="card"><h3>Horário</h3><p>Seg a Sáb: 8h às 20h</p><p>Domingos e feriados: Emergência 24h</p></div>
+      <div class="card"><h3>Pagamentos</h3><p>Cartões crédito e débito</p><p>Pix e dinheiro</p></div>
+      <div class="card"><h3>Diferenciais</h3><p>Atendimento emergencial</p><p>Internação setorizada</p><p>Cuidado para várias espécies</p></div>
     </div>
   </div></section>
 
@@ -186,4 +181,20 @@
     <iframe src="https://www.google.com/maps?q=R.+Irmã+Joséfina+da+Veiga,+47+-+Palmeiras,+Cabo+Frio&output=embed" width="100%" height="360"></iframe></div></section>
 
   <!-- Footer -->
-  <footer><div class="wrap"><p>© <span id="year"></
+  <footer><div class="wrap"><p>© <span id="year"></span> Clínica Veterinária Palmeiras - Cabo Frio RJ</p></div></footer>
+
+  <div class="float-wa"><a href="https://wa.me/5522999685777" target="_blank">WhatsApp</a></div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function enviarWhats(e){
+      e.preventDefault();
+      let nome=document.getElementById("nome").value;
+      let tel=document.getElementById("telefone").value;
+      let msg=document.getElementById("mensagem").value;
+      let url=`https://wa.me/5522999685777?text=Olá, meu nome é ${nome}, tel: ${tel}. Mensagem: ${msg}`;
+      window.open(url,'_blank');
+    }
+  </script>
+</body>
+</html>
