@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Veterinária Palmeiras</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#fff; color:#333; }
+    header { text-align:center; padding:20px; background:#f8f8f8; }
+    header img { max-width:180px; }
+    .hero { text-align:center; padding:50px 20px; background:#e6f0e6; }
+    .hero h1 { font-size:2rem; margin:20px 0; color:#2e5c2e; }
+    .btn { background:#2e5c2e; color:#fff; padding:15px 25px; text-decoration:none; border-radius:8px; display:inline-block; margin:10px; font-weight:bold; }
+    .services { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px; padding:40px 20px; background:#fff7f0; }
+    .service { background:#fff; border-radius:10px; padding:20px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .form-section { padding:40px 20px; text-align:center; background:#f9f9f9; }
+    form { max-width:400px; margin:auto; display:flex; flex-direction:column; gap:15px; }
+    input, select { padding:12px; border:1px solid #ccc; border-radius:6px; }
+    .testimonials { padding:40px 20px; background:#fff7f0; text-align:center; }
+    .testimonial { max-width:600px; margin:auto; font-style:italic; }
+    .map { padding:0; }
+    .map iframe { width:100%; height:300px; border:0; }
+    footer { background:#2e5c2e; color:#fff; text-align:center; padding:20px; }
+    footer a { color:#fff; font-weight:bold; text-decoration:none; }
+  </style>
+</head>
+<body>
+<header>
+  <img src="https://via.placeholder.com/180x80.png?text=LOGO" alt="Clínica Veterinária Palmeiras">
+</header>
+<section class="hero">
+  <h1>agende a consulta do seu pet</h1>
+  <a href="https://wa.me/5522999685777" class="btn">falar no whatsapp</a>
+</section>
+<section class="services">
+  <div class="service"><h3>Consultas</h3></div>
+  <div class="service"><h3>Vacinas</h3></div>
+  <div class="service"><h3>Cirurgias</h3></div>
+  <div class="service"><h3>Exames</h3></div>
+  <div class="service"><h3>Emergência</h3></div>
+  <div class="service"><h3>Internação Setorizada</h3></div>
+</section>
+<section class="form-section">
+  <h2>agende agora</h2>
+  <form action="/lead" method="POST">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="tel" name="telefone" placeholder="Telefone" required>
+    <select name="pet" required>
+      <option value="">Tipo de Pet</option>
+      <option value="cachorro">Cachorro</option>
+      <option value="gato">Gato</option>
+      <option value="outro">Outro</option>
+    </select>
+    <button type="submit" class="btn">quero agendar agora</button>
+  </form>
+</section>
+<section class="testimonials">
+  <h2>o que nossos clientes dizem</h2>
+  <div class="testimonial">
+    <p>"atendimento excelente, cuidaram do meu cachorro com muito carinho!"</p>
+    <p>- cliente satisfeito</p>
+  </div>
+</section>
+<section class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.138573933771!2d-42.0192947!3d-22.8844959" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<footer>
+  <p>Clínica Veterinária Palmeiras</p>
+  <p>R. Irmã Joséfina da Veiga, 47 - Palmeiras, Cabo Frio - RJ</p>
+  <p><a href="https://wa.me/5522999685777">(22) 99968-5777</a></p>
+</footer>
+</body>
+</html>
