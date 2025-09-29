@@ -40,8 +40,6 @@
     *{box-sizing:border-box} html{scroll-behavior:smooth}
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
     img{max-width:100%;display:block} a{text-decoration:none;color:var(--green)}
-
-    /* Header */
     .topbar{position:sticky;top:0;z-index:50;background:#ffffffdd;backdrop-filter:saturate(1.2) blur(8px);box-shadow:var(--shadow)}
     .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
     .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
@@ -51,45 +49,35 @@
     .menu{display:flex;gap:18px;align-items:center}
     .menu a{font-weight:600;color:#133}
     .menu a.btn{padding:10px 16px;border-radius:999px;background:var(--green);color:#fff}
-
-    /* Hero */
     .hero{padding:72px 0 32px;background:linear-gradient(180deg,var(--cream),#fff)}
     .hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
     .hero h2{font-size:clamp(1.8rem,4.2vw,3rem);color:var(--green-700)} .hero p{color:var(--muted)}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
     .btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;padding:14px 18px;border-radius:999px;font-weight:700;box-shadow:var(--shadow)}
     .btn.outline{background:#fff;color:var(--green);border:2px solid var(--green)}
-
-    /* Sections */
     section{padding:56px 0}
     .section-title{font-size:1.8rem;color:var(--green-700)} .section-sub{color:var(--muted);margin-bottom:22px}
-
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .card{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-
     .animals{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
     .animal{background:#fff;border:1px solid #eef2f4;border-radius:16px;padding:16px;text-align:center;box-shadow:var(--shadow)}
     .animal img{width:64px;height:64px;margin:0 auto} .animal span{display:block;margin-top:10px;font-weight:700}
-
     .about{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
-
     .slider{overflow:hidden;border-radius:var(--radius);background:var(--cream);border:1px solid #eee}
     .slides{display:flex;transition:transform .5s ease} .testimonial{min-width:100%;padding:26px}
     .stars{color:#f59e0b} .slider-nav{display:flex;gap:10px;justify-content:center;margin-top:12px}
     .dot{width:10px;height:10px;border-radius:999px;background:#d1d5db;cursor:pointer}.dot.active{background:var(--green)}
-
     .team{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .pro{background:#fff;border:1px solid #eef2f4;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
     .pro img{height:220px;width:100%;object-fit:cover}
     .pro .info{padding:14px}
-
     .insta-slider{overflow:hidden;border-radius:var(--radius)}
     .insta-slides{display:flex;transition:transform .5s ease}
     .insta-slides blockquote{min-width:100%}
-
     footer{background:#0f2e22;color:#e5f2ec;padding:36px 0;margin-top:40px}
     .float-wa{position:fixed;right:18px;bottom:18px;z-index:60}
     .float-wa a{background:#25d366;color:#fff;padding:14px 16px;border-radius:999px;font-weight:800;box-shadow:var(--shadow)}
+    form input, form textarea{width:100%}
   </style>
 </head>
 <body>
@@ -103,7 +91,7 @@
       <nav class="menu">
         <a href="#servicos">Serviços</a><a href="#animais">Animais</a><a href="#sobre">Sobre</a>
         <a href="#depoimentos">Depoimentos</a><a href="#equipe">Equipe</a>
-        <a href="#contato" class="btn">Agendar no WhatsApp</a>
+        <a href="#faleconosco" class="btn">Fale Conosco</a>
       </nav>
     </div>
   </header>
@@ -168,33 +156,41 @@
 
   <!-- Equipe -->
   <section id="equipe"><div class="wrap"><h3 class="section-title">Equipe</h3>
-    <div class="team"><div class="pro"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200"/><div class="info"><strong>Dr. Anderson Santos</strong></div></div>
-    <div class="pro"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=1200"/><div class="info"><strong>Dr. Emerson Costa</strong></div></div></div></div></section>
+    <div class="team">
+      <div class="pro"><img src="https://github.com/viniol/clinica-palmeiras/blob/main/dranderson.jpeg?raw=true"/><div class="info"><strong>Dr. Anderson Santos</strong></div></div>
+      <div class="pro"><img src="https://github.com/viniol/clinica-palmeiras/blob/main/emerson.jpeg?raw=true"/><div class="info"><strong>Dr. Emerson Costa</strong></div></div>
+    </div></div></section>
 
   <!-- Instagram -->
   <section id="instagram"><div class="wrap"><h3 class="section-title">No Instagram</h3>
     <div class="insta-slider"><div class="insta-slides" id="instaSlides">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_URL_1/" data-instgrm-version="14"></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_URL_2/" data-instgrm-version="14"></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_URL_3/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPEIuTCjJC-/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOCOA55iIGO/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNTK8wGIy_u/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMf_iLnxAuJ/" data-instgrm-version="14"></blockquote>
     </div></div></div></section>
   <script async src="//www.instagram.com/embed.js"></script>
 
-  <!-- Contato -->
-  <section id="contato"><div class="wrap"><h3 class="section-title">Contato & Mapa</h3>
+  <!-- Fale Conosco -->
+  <section id="faleconosco"><div class="wrap"><h3 class="section-title">Fale Conosco</h3>
+    <div class="about">
+      <form onsubmit="enviarWhats(event)" style="display:flex;flex-direction:column;gap:12px;background:#fff;padding:20px;border-radius:16px;box-shadow:var(--shadow)">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <input type="tel" id="telefone" placeholder="Seu telefone" required />
+        <textarea id="mensagem" placeholder="Sua mensagem" required style="min-height:100px"></textarea>
+        <button type="submit" class="btn">Enviar pelo WhatsApp</button>
+      </form>
+      <div>
+        <h4 style="margin-top:0;color:var(--green-700)">Outros canais</h4>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5522999685777" target="_blank">(22) 99968-5777</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/veterinariapalmeiras47/" target="_blank">@veterinariapalmeiras47</a></p>
+        <p><strong>Endereço:</strong> R. Irmã Joséfina da Veiga, 47 – Palmeiras, Cabo Frio – RJ</p>
+      </div>
+    </div></div></section>
+
+  <!-- Contato/Mapa -->
+  <section id="contato"><div class="wrap"><h3 class="section-title">Onde estamos</h3>
     <iframe src="https://www.google.com/maps?q=R.+Irmã+Joséfina+da+Veiga,+47+-+Palmeiras,+Cabo+Frio&output=embed" width="100%" height="360"></iframe></div></section>
 
   <!-- Footer -->
-  <footer><div class="wrap"><p>© <span id="year"></span> Clínica Veterinária Palmeiras</p></div></footer>
-
-  <div class="float-wa"><a href="https://wa.me/5522999685777" target="_blank">WhatsApp</a></div>
-
-  <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
-    // carrossel depoimentos
-    const slides=document.getElementById('slides');const dots=document.querySelectorAll('.dot');let current=0;
-    function go(i){current=i;slides.style.transform=`translateX(-${i*100}%)`;dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));}
-    dots.forEach(d=>d.addEventListener('click',()=>go(+d.dataset.slide)));setInterval(()=>go((current+1)%dots.length),6000);
-  </script>
-</body>
-</html>
+  <footer><div class="wrap"><p>
