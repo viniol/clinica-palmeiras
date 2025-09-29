@@ -16,26 +16,6 @@
   <!-- favicon/logo -->
   <link rel="icon" href="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" type="image/jpeg" />
 
-  <!-- Local Business Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "VeterinaryCare",
-    "name": "Clínica Veterinária Palmeiras",
-    "image": "https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true",
-    "telephone": "+55-22-99968-5777",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "R. Irmã Joséfina da Veiga, 47 - Palmeiras",
-      "addressLocality": "Cabo Frio",
-      "addressRegion": "RJ",
-      "postalCode": "28911-120",
-      "addressCountry": "BR"
-    },
-    "url": "https://viniol.github.io/clinica-palmeiras/"
-  }
-  </script>
-
   <style>
     :root{--green:#1f6b45;--green-700:#165236;--cream:#fffdf8;--text:#1b1b1b;--muted:#64748b;--shadow:0 6px 18px rgba(0,0,0,.08);--radius:18px;}
     *{box-sizing:border-box} html{scroll-behavior:smooth}
@@ -71,21 +51,24 @@
     .dot{width:10px;height:10px;border-radius:999px;background:#d1d5db;cursor:pointer}.dot.active{background:var(--green)}
     .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
     .pro{background:#fff;border:1px solid #eef2f4;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
-    .pro img{height:220px;width:100%;object-fit:cover}
+    .pro img{width:100%;max-height:320px;object-fit:contain;object-position:top center}
     .pro .info{padding:14px;text-align:center}
-    .insta-slider{overflow:hidden;border-radius:var(--radius)}
-    .insta-slides{display:flex;transition:transform .5s ease}
-    .insta-slides blockquote{min-width:100%}
+    .insta-carousel{display:flex;overflow-x:auto;gap:10px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:10px 0}
+    .insta-carousel a{flex:0 0 80%;scroll-snap-align:center;border-radius:12px;overflow:hidden;border:1px solid #eee}
+    .insta-carousel img{width:100%;height:auto;display:block}
     footer{background:#0f2e22;color:#e5f2ec;padding:36px 0;margin-top:40px}
     .float-wa{position:fixed;right:18px;bottom:18px;z-index:60}
     .float-wa a{background:#25d366;color:#fff;padding:14px 16px;border-radius:999px;font-weight:800;box-shadow:var(--shadow)}
     form input, form textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px}
     /* Responsivo */
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       .hero .grid, .about {grid-template-columns:1fr;text-align:center}
+      .cta-row {flex-direction:column;align-items:center}
+      .cta-row .btn {width:100%;justify-content:center}
       .menu{display:none;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#fff;padding:20px;box-shadow:var(--shadow)}
       .menu.active{display:flex}
       .hamburger{display:block}
+      .slider-nav{flex-direction:column;align-items:center;gap:14px}
     }
   </style>
 </head>
@@ -173,13 +156,13 @@
 
   <!-- Instagram -->
   <section id="instagram"><div class="wrap"><h2 class="section-title">Últimos posts no Instagram</h2>
-    <div class="insta-slider"><div class="insta-slides" id="instaSlides">
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPEIuTCjJC-/" data-instgrm-version="14"></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOCOA55iIGO/" data-instgrm-version="14"></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DNTK8wGIy_u/" data-instgrm-version="14"></blockquote>
-      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMf_iLnxAuJ/" data-instgrm-version="14"></blockquote>
-    </div></div></div></section>
-  <script async src="//www.instagram.com/embed.js"></script>
+    <div class="insta-carousel">
+      <a href="https://www.instagram.com/reel/DPEIuTCjJC-/" target="_blank"><img src="https://i.imgur.com/8l6Z5dZ.jpg" alt="Reel veterinária 1"></a>
+      <a href="https://www.instagram.com/reel/DOCOA55iIGO/" target="_blank"><img src="https://i.imgur.com/Hv2BjlL.jpg" alt="Reel veterinária 2"></a>
+      <a href="https://www.instagram.com/reel/DNTK8wGIy_u/" target="_blank"><img src="https://i.imgur.com/Fp5xvlD.jpg" alt="Reel veterinária 3"></a>
+      <a href="https://www.instagram.com/reel/DMf_iLnxAuJ/" target="_blank"><img src="https://i.imgur.com/N2vQ1rH.jpg" alt="Reel veterinária 4"></a>
+    </div>
+  </div></section>
 
   <!-- Fale Conosco -->
   <section id="faleconosco"><div class="wrap"><h2 class="section-title">Fale Conosco</h2>
@@ -193,4 +176,14 @@
       <div>
         <h3 style="color:var(--green-700)">Outros canais</h3>
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/5522999685777" target="_blank">(22) 99968-5777</a></p>
-        <p
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/veterinariapalmeiras47/" target="_blank">@veterinariapalmeiras47</a></p>
+        <p><strong>Endereço:</strong> R. Irmã Joséfina da Veiga, 47 – Palmeiras, Cabo Frio – RJ</p>
+      </div>
+    </div></div></section>
+
+  <!-- Contato/Mapa -->
+  <section id="contato"><div class="wrap"><h2 class="section-title">Onde estamos</h2>
+    <iframe src="https://www.google.com/maps?q=R.+Irmã+Joséfina+da+Veiga,+47+-+Palmeiras,+Cabo+Frio&output=embed" width="100%" height="360"></iframe></div></section>
+
+  <!-- Footer -->
+  <footer><div class="wrap"><p>© <span id="year"></
