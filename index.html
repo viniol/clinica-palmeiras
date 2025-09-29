@@ -8,16 +8,40 @@
   <meta property="og:title" content="Clínica Veterinária Palmeiras" />
   <meta property="og:description" content="Cuidando de todos os animais com amor e dedicação em Cabo Frio RJ." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://seu-dominio.com" />
-  <meta property="og:image" content="https://instagram.flis12-1.fna.fbcdn.net/v/t51.2885-19/476451073_1621016045184798_3809514733533467314_n.jpg" />
+  <meta property="og:url" content="https://viniol.github.io/clinica-palmeiras/" />
+  <meta property="og:image" content="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" />
   <meta name="theme-color" content="#1f6b45" />
-  <link rel="icon" href="https://instagram.flis12-1.fna.fbcdn.net/v/t51.2885-19/476451073_1621016045184798_3809514733533467314_n.jpg" type="image/jpeg" />
+
+  <!-- favicon/logo -->
+  <link rel="icon" href="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" />
+
+  <!-- Google Tag (substitua G-XXXX) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXX');
+  </script>
+
+  <!-- Meta Pixel (substitua PIXEL_ID) -->
+  <script>
+    !(function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)})(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
+  </script>
 
   <style>
     :root{--green:#1f6b45;--green-700:#165236;--brown:#b86f3a;--cream:#fffdf8;--bg:#ffffff;--text:#1b1b1b;--muted:#64748b;--shadow:0 6px 18px rgba(0,0,0,.08);--radius:18px;}
     *{box-sizing:border-box} html{scroll-behavior:smooth}
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
     img{max-width:100%;display:block} a{text-decoration:none;color:var(--green)}
+
+    /* Header */
     .topbar{position:sticky;top:0;z-index:50;background:#ffffffdd;backdrop-filter:saturate(1.2) blur(8px);box-shadow:var(--shadow)}
     .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
     .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
@@ -27,41 +51,53 @@
     .menu{display:flex;gap:18px;align-items:center}
     .menu a{font-weight:600;color:#133}
     .menu a.btn{padding:10px 16px;border-radius:999px;background:var(--green);color:#fff}
+
+    /* Hero */
     .hero{padding:72px 0 32px;background:linear-gradient(180deg,var(--cream),#fff)}
     .hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
     .hero h2{font-size:clamp(1.8rem,4.2vw,3rem);color:var(--green-700)} .hero p{color:var(--muted)}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
     .btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#fff;padding:14px 18px;border-radius:999px;font-weight:700;box-shadow:var(--shadow)}
     .btn.outline{background:#fff;color:var(--green);border:2px solid var(--green)}
+
+    /* Sections */
     section{padding:56px 0}
     .section-title{font-size:1.8rem;color:var(--green-700)} .section-sub{color:var(--muted);margin-bottom:22px}
+
     .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .card{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+
     .animals{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
     .animal{background:#fff;border:1px solid #eef2f4;border-radius:16px;padding:16px;text-align:center;box-shadow:var(--shadow)}
     .animal img{width:64px;height:64px;margin:0 auto} .animal span{display:block;margin-top:10px;font-weight:700}
+
     .about{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
+
     .slider{overflow:hidden;border-radius:var(--radius);background:var(--cream);border:1px solid #eee}
     .slides{display:flex;transition:transform .5s ease} .testimonial{min-width:100%;padding:26px}
     .stars{color:#f59e0b} .slider-nav{display:flex;gap:10px;justify-content:center;margin-top:12px}
     .dot{width:10px;height:10px;border-radius:999px;background:#d1d5db;cursor:pointer}.dot.active{background:var(--green)}
+
     .team{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
     .pro{background:#fff;border:1px solid #eef2f4;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
     .pro img{height:220px;width:100%;object-fit:cover}
     .pro .info{padding:14px}
-    .insta{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-    .insta a{display:block;border-radius:12px;overflow:hidden;border:1px solid #eee}
-    .insta img{aspect-ratio:1/1;object-fit:cover}
+
+    .insta-slider{overflow:hidden;border-radius:var(--radius)}
+    .insta-slides{display:flex;transition:transform .5s ease}
+    .insta-slides blockquote{min-width:100%}
+
     footer{background:#0f2e22;color:#e5f2ec;padding:36px 0;margin-top:40px}
     .float-wa{position:fixed;right:18px;bottom:18px;z-index:60}
     .float-wa a{background:#25d366;color:#fff;padding:14px 16px;border-radius:999px;font-weight:800;box-shadow:var(--shadow)}
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header class="topbar">
     <div class="wrap nav">
       <div class="brand">
-        <img src="https://instagram.flis12-1.fna.fbcdn.net/v/t51.2885-19/476451073_1621016045184798_3809514733533467314_n.jpg" alt="Clínica Veterinária Palmeiras" />
+        <img src="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" alt="logo" />
         <h1>Clínica Veterinária Palmeiras</h1>
       </div>
       <nav class="menu">
@@ -72,6 +108,7 @@
     </div>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <div class="wrap grid">
       <div>
@@ -86,42 +123,75 @@
     </div>
   </section>
 
-  <section id="servicos"><div class="wrap"><h3 class="section-title">Serviços</h3><div class="cards"><div class="card"><h3>Consultas</h3></div><div class="card"><h3>Vacinas</h3></div><div class="card"><h3>Cirurgias</h3></div><div class="card"><h3>Exames</h3></div><div class="card"><h3>Emergência</h3></div><div class="card"><h3>Internação</h3></div></div></div></section>
+  <!-- Serviços -->
+  <section id="servicos"><div class="wrap"><h3 class="section-title">Serviços</h3>
+    <div class="cards"><div class="card"><h3>Consultas</h3></div><div class="card"><h3>Vacinas</h3></div><div class="card"><h3>Cirurgias</h3></div><div class="card"><h3>Exames</h3></div><div class="card"><h3>Emergência</h3></div><div class="card"><h3>Internação</h3></div></div></div></section>
 
-  <section id="animais"><div class="wrap"><h3 class="section-title">Atendemos diversas espécies</h3><div class="animals">
-    <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"/><span>Cães</span></div>
-    <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616430.png"/><span>Gatos</span></div>
-    <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/1998/1998611.png"/><span>Cavalos</span></div>
-    <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616554.png"/><span>Pássaros</span></div>
-    <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"/><span>Outros</span></div>
-  </div></div></section>
+  <!-- Animais -->
+  <section id="animais"><div class="wrap"><h3 class="section-title">Atendemos diversas espécies</h3>
+    <div class="animals">
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"/><span>Cães</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616430.png"/><span>Gatos</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/1998/1998611.png"/><span>Cavalos</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616554.png"/><span>Pássaros</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"/><span>Outros</span></div>
+    </div></div></section>
 
-  <section id="sobre"><div class="wrap about"><div><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200" /></div><div><h3 class="section-title">Sobre nós</h3><p>cuidamos do seu pet como parte da família...</p></div></div></section>
-
-  <section id="depoimentos"><div class="wrap"><h3 class="section-title">Depoimentos</h3><div class="slider"><div class="slides" id="slides">
-    <div class="testimonial"><div class="stars">★★★★★</div><p>ótimo atendimento</p></div>
-    <div class="testimonial"><div class="stars">★★★★★</div><p>resolveram a emergência da minha gata</p></div>
-    <div class="testimonial"><div class="stars">★★★★★</div><p>estrutura completa</p></div>
-  </div></div><div class="slider-nav"><button class="dot active" data-slide="0"></button><button class="dot" data-slide="1"></button><button class="dot" data-slide="2"></button></div></div></section>
-
-  <section id="equipe"><div class="wrap"><h3 class="section-title">Equipe</h3><div class="team"><div class="pro"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200"/><div class="info"><strong>Dr. Anderson Santos</strong></div></div><div class="pro"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=1200"/><div class="info"><strong>Dr. Emerson Costa</strong></div></div></div></div></section>
-
-  <section id="instagram"><div class="wrap"><h3 class="section-title">No Instagram</h3><p>Acompanhe <a href="https://www.instagram.com/veterinariapalmeiras47/" target="_blank">@veterinariapalmeiras47</a></p>
-    <div class="insta">
-      <a href="https://www.instagram.com/veterinariapalmeiras47/" target="_blank"><img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=600" /></a>
-      <a href="https://www.instagram.com/veterinariapalmeiras47/" target="_blank"><img src="https://images.unsplash.com/photo-1525253013412-55c1a69a5738?q=80&w=600" /></a>
-      <a href="https://www.instagram.com/veterinariapalmeiras47/" target="_blank"><img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?q=80&w=600" /></a>
-      <a href="https://www.instagram.com/veterinariapalmeiras47/" target="_blank"><img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=600" /></a>
+  <!-- Sobre -->
+  <section id="sobre"><div class="wrap about">
+    <div>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DKHiZI5IEE2/" data-instgrm-version="14"></blockquote>
+      <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+    <div>
+      <h3 class="section-title">Nossa história</h3>
+      <p class="section-sub">Um sonho que virou realidade em Cabo Frio</p>
+      <p>Fundada em 2025, a Clínica Veterinária Palmeiras nasceu do desejo de oferecer aos pets de Cabo Frio um espaço moderno, humano e preparado para todos os momentos. Desde o primeiro dia, nossa missão é unir tecnologia, experiência e amor para garantir o bem-estar de cada animal.</p>
+      <p>Com uma estrutura completa e uma equipe dedicada, nos tornamos um ponto de confiança para tutores que buscam mais do que atendimento: querem acolhimento, transparência e cuidado verdadeiro.</p>
     </div>
   </div></section>
 
-  <section id="contato"><div class="wrap"><h3 class="section-title">Contato & Mapa</h3><iframe src="https://www.google.com/maps?q=R.+Irmã+Joséfina+da+Veiga,+47+-+Palmeiras,+Cabo+Frio&output=embed" width="100%" height="360"></iframe></div></section>
+  <!-- Depoimentos -->
+  <section id="depoimentos"><div class="wrap"><h3 class="section-title">O que nossos clientes dizem</h3>
+    <div class="slider"><div class="slides" id="slides">
+      <div class="testimonial"><div class="stars">★★★★★</div><p>“Excelente atendimento, cuidaram muito bem do meu cachorro.”</p></div>
+      <div class="testimonial"><div class="stars">★★★★★</div><p>“Clínica organizada, veterinários muito atenciosos.”</p></div>
+      <div class="testimonial"><div class="stars">★★★★★</div><p>“Responderam rápido e salvaram meu gato numa emergência.”</p></div>
+    </div></div>
+    <div class="slider-nav">
+      <button class="dot active" data-slide="0"></button>
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
+      <a class="btn outline" href="https://www.google.com/maps/place/Cl%C3%ADnica+veterin%C3%A1ria+Palmeiras/@-22.8775043,-42.0497371,17z/" target="_blank">Ver todas no Google</a>
+    </div>
+  </div></section>
 
+  <!-- Equipe -->
+  <section id="equipe"><div class="wrap"><h3 class="section-title">Equipe</h3>
+    <div class="team"><div class="pro"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200"/><div class="info"><strong>Dr. Anderson Santos</strong></div></div>
+    <div class="pro"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=1200"/><div class="info"><strong>Dr. Emerson Costa</strong></div></div></div></div></section>
+
+  <!-- Instagram -->
+  <section id="instagram"><div class="wrap"><h3 class="section-title">No Instagram</h3>
+    <div class="insta-slider"><div class="insta-slides" id="instaSlides">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_URL_1/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_URL_2/" data-instgrm-version="14"></blockquote>
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_URL_3/" data-instgrm-version="14"></blockquote>
+    </div></div></div></section>
+  <script async src="//www.instagram.com/embed.js"></script>
+
+  <!-- Contato -->
+  <section id="contato"><div class="wrap"><h3 class="section-title">Contato & Mapa</h3>
+    <iframe src="https://www.google.com/maps?q=R.+Irmã+Joséfina+da+Veiga,+47+-+Palmeiras,+Cabo+Frio&output=embed" width="100%" height="360"></iframe></div></section>
+
+  <!-- Footer -->
   <footer><div class="wrap"><p>© <span id="year"></span> Clínica Veterinária Palmeiras</p></div></footer>
+
   <div class="float-wa"><a href="https://wa.me/5522999685777" target="_blank">WhatsApp</a></div>
 
   <script>
     document.getElementById('year').textContent=new Date().getFullYear();
+    // carrossel depoimentos
     const slides=document.getElementById('slides');const dots=document.querySelectorAll('.dot');let current=0;
     function go(i){current=i;slides.style.transform=`translateX(-${i*100}%)`;dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));}
     dots.forEach(d=>d.addEventListener('click',()=>go(+d.dataset.slide)));setInterval(()=>go((current+1)%dots.length),6000);
