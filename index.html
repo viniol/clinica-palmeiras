@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clínica Veterinária Palmeiras | Cabo Frio RJ</title>
-  <meta name="description" content="Consultas, vacinas, cirurgias, exames, emergência e internação setorizada. Cuidamos de cães, gatos, cavalos, pássaros e outros pets em Cabo Frio RJ." />
-  <meta property="og:title" content="Clínica Veterinária Palmeiras" />
-  <meta property="og:description" content="Cuidando de todos os animais com amor e dedicação em Cabo Frio RJ." />
+  <title>Clínica Veterinária Palmeiras em Cabo Frio RJ | Consultas, Vacinas e Emergência</title>
+  <meta name="description" content="Clínica Veterinária em Cabo Frio RJ. Consultas, vacinas, cirurgias, exames, emergência 24h e internação setorizada. Cuidamos de cães, gatos, cavalos, pássaros e outros animais com amor e dedicação." />
+
+  <meta property="og:title" content="Clínica Veterinária Palmeiras em Cabo Frio RJ" />
+  <meta property="og:description" content="Atendimento completo para cães, gatos, cavalos, pássaros e outros pets em Cabo Frio. Consultas, vacinas, cirurgias, exames e emergência." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://viniol.github.io/clinica-palmeiras/" />
   <meta property="og:image" content="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" />
@@ -14,33 +15,33 @@
 
   <!-- favicon/logo -->
   <link rel="icon" href="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" type="image/jpeg" />
-  <link rel="apple-touch-icon" href="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" />
 
-  <!-- Google Tag (substitua G-XXXX) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXX');
-  </script>
-
-  <!-- Meta Pixel (substitua PIXEL_ID) -->
-  <script>
-    !(function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)})(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'PIXEL_ID'); fbq('track', 'PageView');
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VeterinaryCare",
+    "name": "Clínica Veterinária Palmeiras",
+    "image": "https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true",
+    "telephone": "+55-22-99968-5777",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Irmã Joséfina da Veiga, 47 - Palmeiras",
+      "addressLocality": "Cabo Frio",
+      "addressRegion": "RJ",
+      "postalCode": "28911-120",
+      "addressCountry": "BR"
+    },
+    "url": "https://viniol.github.io/clinica-palmeiras/"
+  }
   </script>
 
   <style>
-    :root{--green:#1f6b45;--green-700:#165236;--brown:#b86f3a;--cream:#fffdf8;--bg:#ffffff;--text:#1b1b1b;--muted:#64748b;--shadow:0 6px 18px rgba(0,0,0,.08);--radius:18px;}
+    :root{--green:#1f6b45;--green-700:#165236;--cream:#fffdf8;--text:#1b1b1b;--muted:#64748b;--shadow:0 6px 18px rgba(0,0,0,.08);--radius:18px;}
     *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;color:var(--text);background:#fff}
     img{max-width:100%;display:block} a{text-decoration:none;color:var(--green)}
-    .topbar{position:sticky;top:0;z-index:50;background:#ffffffdd;backdrop-filter:saturate(1.2) blur(8px);box-shadow:var(--shadow)}
+    .topbar{position:sticky;top:0;z-index:50;background:#fff;box-shadow:var(--shadow)}
     .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
     .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
     .brand{display:flex;align-items:center;gap:12px}
@@ -49,7 +50,8 @@
     .menu{display:flex;gap:18px;align-items:center}
     .menu a{font-weight:600;color:#133}
     .menu a.btn{padding:10px 16px;border-radius:999px;background:var(--green);color:#fff}
-    .hero{padding:72px 0 32px;background:linear-gradient(180deg,var(--cream),#fff)}
+    .hamburger{display:none;font-size:1.8rem;cursor:pointer}
+    .hero{padding:72px 0;background:linear-gradient(180deg,var(--cream),#fff)}
     .hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
     .hero h2{font-size:clamp(1.8rem,4.2vw,3rem);color:var(--green-700)} .hero p{color:var(--muted)}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
@@ -57,27 +59,34 @@
     .btn.outline{background:#fff;color:var(--green);border:2px solid var(--green)}
     section{padding:56px 0}
     .section-title{font-size:1.8rem;color:var(--green-700)} .section-sub{color:var(--muted);margin-bottom:22px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
-    .animals{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+    .card{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);text-align:center}
+    .animals{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
     .animal{background:#fff;border:1px solid #eef2f4;border-radius:16px;padding:16px;text-align:center;box-shadow:var(--shadow)}
     .animal img{width:64px;height:64px;margin:0 auto} .animal span{display:block;margin-top:10px;font-weight:700}
     .about{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
-    .slider{overflow:hidden;border-radius:var(--radius);background:var(--cream);border:1px solid #eee}
+    .slider{overflow:hidden;border-radius:var(--radius);background:#fff;border:1px solid #eee}
     .slides{display:flex;transition:transform .5s ease} .testimonial{min-width:100%;padding:26px}
-    .stars{color:#f59e0b} .slider-nav{display:flex;gap:10px;justify-content:center;margin-top:12px}
+    .stars{color:#f59e0b} .slider-nav{display:flex;gap:10px;justify-content:center;margin-top:12px;flex-wrap:wrap}
     .dot{width:10px;height:10px;border-radius:999px;background:#d1d5db;cursor:pointer}.dot.active{background:var(--green)}
-    .team{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
     .pro{background:#fff;border:1px solid #eef2f4;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
     .pro img{height:220px;width:100%;object-fit:cover}
-    .pro .info{padding:14px}
+    .pro .info{padding:14px;text-align:center}
     .insta-slider{overflow:hidden;border-radius:var(--radius)}
     .insta-slides{display:flex;transition:transform .5s ease}
     .insta-slides blockquote{min-width:100%}
     footer{background:#0f2e22;color:#e5f2ec;padding:36px 0;margin-top:40px}
     .float-wa{position:fixed;right:18px;bottom:18px;z-index:60}
     .float-wa a{background:#25d366;color:#fff;padding:14px 16px;border-radius:999px;font-weight:800;box-shadow:var(--shadow)}
-    form input, form textarea{width:100%}
+    form input, form textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px}
+    /* Responsivo */
+    @media (max-width: 992px) {
+      .hero .grid, .about {grid-template-columns:1fr;text-align:center}
+      .menu{display:none;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#fff;padding:20px;box-shadow:var(--shadow)}
+      .menu.active{display:flex}
+      .hamburger{display:block}
+    }
   </style>
 </head>
 <body>
@@ -85,14 +94,14 @@
   <header class="topbar">
     <div class="wrap nav">
       <div class="brand">
-        <img src="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" alt="logo" />
+        <img src="https://github.com/viniol/clinica-palmeiras/blob/main/476451073_1621016045184798_3809514733533467314_n.jpg?raw=true" alt="Clínica Veterinária Palmeiras logo" />
         <h1>Clínica Veterinária Palmeiras</h1>
       </div>
       <nav class="menu">
         <a href="#servicos">Serviços</a><a href="#animais">Animais</a><a href="#sobre">Sobre</a>
-        <a href="#depoimentos">Depoimentos</a><a href="#equipe">Equipe</a>
-        <a href="#faleconosco" class="btn">Fale Conosco</a>
+        <a href="#depoimentos">Depoimentos</a><a href="#equipe">Equipe</a><a href="#faleconosco">Fale Conosco</a>
       </nav>
+      <div class="hamburger" onclick="document.querySelector('.menu').classList.toggle('active')">☰</div>
     </div>
   </header>
 
@@ -100,29 +109,33 @@
   <section class="hero">
     <div class="wrap grid">
       <div>
-        <h2>Cuidando de todos os animais com amor e dedicação</h2>
+        <h2>Clínica Veterinária em Cabo Frio com atendimento completo</h2>
         <p>Consultas, vacinas, cirurgias, exames, emergência e internação setorizada. Cuidamos de cães, gatos, cavalos, pássaros e outros pets.</p>
         <div class="cta-row">
           <a class="btn" href="https://wa.me/5522999685777" target="_blank">Agende sua consulta</a>
           <a class="btn outline" href="#servicos">Conheça os serviços</a>
         </div>
       </div>
-      <div><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1200&auto=format&fit=crop" alt="veterinário" /></div>
+      <div><img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1200&auto=format&fit=crop" alt="Veterinário cuidando de cachorro" /></div>
     </div>
   </section>
 
   <!-- Serviços -->
-  <section id="servicos"><div class="wrap"><h3 class="section-title">Serviços</h3>
-    <div class="cards"><div class="card"><h3>Consultas</h3></div><div class="card"><h3>Vacinas</h3></div><div class="card"><h3>Cirurgias</h3></div><div class="card"><h3>Exames</h3></div><div class="card"><h3>Emergência</h3></div><div class="card"><h3>Internação</h3></div></div></div></section>
+  <section id="servicos"><div class="wrap"><h2 class="section-title">Serviços Veterinários</h2>
+    <div class="cards">
+      <div class="card"><h3>Consultas</h3></div><div class="card"><h3>Vacinas</h3></div>
+      <div class="card"><h3>Cirurgias</h3></div><div class="card"><h3>Exames</h3></div>
+      <div class="card"><h3>Emergência</h3></div><div class="card"><h3>Internação</h3></div>
+    </div></div></section>
 
   <!-- Animais -->
-  <section id="animais"><div class="wrap"><h3 class="section-title">Atendemos diversas espécies</h3>
+  <section id="animais"><div class="wrap"><h2 class="section-title">Atendemos diversas espécies</h2>
     <div class="animals">
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"/><span>Cães</span></div>
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616430.png"/><span>Gatos</span></div>
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/1998/1998611.png"/><span>Cavalos</span></div>
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616554.png"/><span>Pássaros</span></div>
-      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png"/><span>Outros</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Ícone cachorro"/><span>Cães</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616430.png" alt="Ícone gato"/><span>Gatos</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/1998/1998611.png" alt="Ícone cavalo"/><span>Cavalos</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616554.png" alt="Ícone pássaro"/><span>Pássaros</span></div>
+      <div class="animal"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Ícone outros pets"/><span>Outros</span></div>
     </div></div></section>
 
   <!-- Sobre -->
@@ -132,37 +145,34 @@
       <script async src="//www.instagram.com/embed.js"></script>
     </div>
     <div>
-      <h3 class="section-title">Nossa história</h3>
-      <p class="section-sub">Um sonho que virou realidade em Cabo Frio</p>
-      <p>Fundada em 2025, a Clínica Veterinária Palmeiras nasceu do desejo de oferecer aos pets de Cabo Frio um espaço moderno, humano e preparado para todos os momentos. Desde o primeiro dia, nossa missão é unir tecnologia, experiência e amor para garantir o bem-estar de cada animal.</p>
-      <p>Com uma estrutura completa e uma equipe dedicada, nos tornamos um ponto de confiança para tutores que buscam mais do que atendimento: querem acolhimento, transparência e cuidado verdadeiro.</p>
+      <h2 class="section-title">Nossa história</h2>
+      <p class="section-sub">Clínica veterinária em Cabo Frio inaugurada em 2025</p>
+      <p>A Clínica Veterinária Palmeiras nasceu do desejo de oferecer aos pets de Cabo Frio um espaço moderno, humano e preparado para todos os momentos. Nossa missão é unir tecnologia, experiência e amor para garantir o bem-estar de cada animal.</p>
+      <p>Desde consultas de rotina até emergências, estamos prontos para cuidar com dedicação e transparência, tratando cada vida como parte da nossa família.</p>
     </div>
   </div></section>
 
   <!-- Depoimentos -->
-  <section id="depoimentos"><div class="wrap"><h3 class="section-title">O que nossos clientes dizem</h3>
+  <section id="depoimentos"><div class="wrap"><h2 class="section-title">Depoimentos de clientes</h2>
     <div class="slider"><div class="slides" id="slides">
       <div class="testimonial"><div class="stars">★★★★★</div><p>“Excelente atendimento, cuidaram muito bem do meu cachorro.”</p></div>
       <div class="testimonial"><div class="stars">★★★★★</div><p>“Clínica organizada, veterinários muito atenciosos.”</p></div>
       <div class="testimonial"><div class="stars">★★★★★</div><p>“Responderam rápido e salvaram meu gato numa emergência.”</p></div>
     </div></div>
     <div class="slider-nav">
-      <button class="dot active" data-slide="0"></button>
-      <button class="dot" data-slide="1"></button>
-      <button class="dot" data-slide="2"></button>
+      <button class="dot active" data-slide="0"></button><button class="dot" data-slide="1"></button><button class="dot" data-slide="2"></button>
       <a class="btn outline" href="https://www.google.com/maps/place/Cl%C3%ADnica+veterin%C3%A1ria+Palmeiras/@-22.8775043,-42.0497371,17z/" target="_blank">Ver todas no Google</a>
-    </div>
-  </div></section>
+    </div></div></section>
 
   <!-- Equipe -->
-  <section id="equipe"><div class="wrap"><h3 class="section-title">Equipe</h3>
+  <section id="equipe"><div class="wrap"><h2 class="section-title">Nossa Equipe</h2>
     <div class="team">
-      <div class="pro"><img src="https://github.com/viniol/clinica-palmeiras/blob/main/dranderson.jpeg?raw=true"/><div class="info"><strong>Dr. Anderson Santos</strong></div></div>
-      <div class="pro"><img src="https://github.com/viniol/clinica-palmeiras/blob/main/emerson.jpeg?raw=true"/><div class="info"><strong>Dr. Emerson Costa</strong></div></div>
+      <div class="pro"><img src="https://github.com/viniol/clinica-palmeiras/blob/main/dranderson.jpeg?raw=true" alt="Dr. Anderson Santos"/><div class="info"><strong>Dr. Anderson Santos</strong></div></div>
+      <div class="pro"><img src="https://github.com/viniol/clinica-palmeiras/blob/main/emerson.jpeg?raw=true" alt="Dr. Emerson Costa"/><div class="info"><strong>Dr. Emerson Costa</strong></div></div>
     </div></div></section>
 
   <!-- Instagram -->
-  <section id="instagram"><div class="wrap"><h3 class="section-title">No Instagram</h3>
+  <section id="instagram"><div class="wrap"><h2 class="section-title">Últimos posts no Instagram</h2>
     <div class="insta-slider"><div class="insta-slides" id="instaSlides">
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DPEIuTCjJC-/" data-instgrm-version="14"></blockquote>
       <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOCOA55iIGO/" data-instgrm-version="14"></blockquote>
@@ -172,7 +182,7 @@
   <script async src="//www.instagram.com/embed.js"></script>
 
   <!-- Fale Conosco -->
-  <section id="faleconosco"><div class="wrap"><h3 class="section-title">Fale Conosco</h3>
+  <section id="faleconosco"><div class="wrap"><h2 class="section-title">Fale Conosco</h2>
     <div class="about">
       <form onsubmit="enviarWhats(event)" style="display:flex;flex-direction:column;gap:12px;background:#fff;padding:20px;border-radius:16px;box-shadow:var(--shadow)">
         <input type="text" id="nome" placeholder="Seu nome" required />
@@ -181,16 +191,6 @@
         <button type="submit" class="btn">Enviar pelo WhatsApp</button>
       </form>
       <div>
-        <h4 style="margin-top:0;color:var(--green-700)">Outros canais</h4>
+        <h3 style="color:var(--green-700)">Outros canais</h3>
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/5522999685777" target="_blank">(22) 99968-5777</a></p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/veterinariapalmeiras47/" target="_blank">@veterinariapalmeiras47</a></p>
-        <p><strong>Endereço:</strong> R. Irmã Joséfina da Veiga, 47 – Palmeiras, Cabo Frio – RJ</p>
-      </div>
-    </div></div></section>
-
-  <!-- Contato/Mapa -->
-  <section id="contato"><div class="wrap"><h3 class="section-title">Onde estamos</h3>
-    <iframe src="https://www.google.com/maps?q=R.+Irmã+Joséfina+da+Veiga,+47+-+Palmeiras,+Cabo+Frio&output=embed" width="100%" height="360"></iframe></div></section>
-
-  <!-- Footer -->
-  <footer><div class="wrap"><p>
+        <p
